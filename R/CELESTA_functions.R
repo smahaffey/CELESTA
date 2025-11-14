@@ -683,7 +683,7 @@ PlotCellsAnyCombination <- function(cell_type_assignment_to_plot,
   ### change the unknown cell location in cell_type_exist
   if(length(which(cell_number_to_use==0))>0){
     cell_type_exist <- cell_type_exist[-which(cell_number_to_use==0)]
-    color_plot <- c(cell_type_colors[which(cell_type_exist==1)],NA)
+    color_plot <- c(cell_type_colors[which(cell_type_exist==1)],"grey")
   }else{
     color_plot <- cell_type_colors[which(cell_type_exist==1)]
   }
